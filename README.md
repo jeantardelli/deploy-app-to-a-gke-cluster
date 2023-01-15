@@ -11,5 +11,3 @@ Code to deploy an app to a GKE cluster
 4. Build Container Image: `make build-container-image`
 5. Kubernetes Deployment: `kubectl apply -f deployment.yaml`
 6. Kubernetes Service: `kubectl apply -f service.yaml`
-
-Note: Before step 5, it is necessary to give access to the SA.
