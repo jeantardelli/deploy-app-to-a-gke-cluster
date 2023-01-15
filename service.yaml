@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: deploy-app-to-a-gka-cluster
+  name: deploy-app-to-a-gke-cluster
 spec:
   type: LoadBalancer
   selector:
-    app: deploy-app-to-a-gka-cluster
+    app: deploy-app-to-a-gke-cluster
   ports:
   - port: 80
     targetPort: 8080

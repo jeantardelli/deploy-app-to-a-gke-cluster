@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deploy-app-to-a-gka-cluster-gke
+  name: deploy-app-to-a-gke-cluster-gke
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: deploy-app-to-a-gka-cluster
+      app: deploy-app-to-a-gke-cluster
   template:
     metadata:
       labels:
-        app: deploy-app-to-a-gka-cluster
+        app: deploy-app-to-a-gke-cluster
     spec:
       containers:
       - name: deploy-app-to-a-gka-cluster
-        image: europe-west1-docker.pkg.dev/deploy-app-to-a-gke-cluster/deploy-app-to-a-gka-cluster/deploy-app-to-a-gka-cluster:latest
+        image: europe-west1-docker.pkg.dev/deploy-app-to-a-gke-cluster/deploy-app-to-a-gke-cluster/deploy-app-to-a-gke-cluster:latest
         ports:
         - containerPort: 8080
         env:
